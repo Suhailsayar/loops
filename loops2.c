@@ -7,7 +7,7 @@ int main(){
   int n=10;
   for(i = 1; i <=n ; i++)
   for(j = 1; j <= i ; j++)
-    for(k=1; k <= (n^3); k++){
+    for(k=1; k <= n*n*n; k++){
     printf("hello world\n");
       count++;
     }
