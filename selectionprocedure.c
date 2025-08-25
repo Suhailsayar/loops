@@ -21,15 +21,15 @@
       if( p == k ) return arr[p];
       else if(p<k)
       {
-        low = p + 1;
+        selection_procedure(arr,p+1,high,k);
       }else{
-        high = p - 1;
+        selection_procedure(arr,p-1,high,k);
       }
     }
     return -1;
 }
 int main(){
-  int arr[]={10,20,30,40};
+  int arr[]={88,106,108,0};
   int n = sizeof(arr)/sizeof(arr[0]);
   int k = 1;
   int val = selection_procedure(arr,0,n-1,k-1);
